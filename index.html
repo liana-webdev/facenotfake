@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Not Fake</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <!-- Moving gradient mist (depth/parallax) -->
+    <div class="mist layer l1 parallax" data-speed="0.12"></div>
+    <div class="mist layer l2 parallax" data-speed="0.2"></div>
+    <div class="mist layer l3 parallax" data-speed="0.35"></div>
+
+    <!-- Floating blur orbs -->
+    <div class="blur b1 parallax" data-speed="-0.05"></div>
+    <div class="blur b2 parallax" data-speed="0.08"></div>
+    <div class="blur b3 parallax" data-speed="-0.15"></div>
+    <!-- Particles layer (over background, under content) -->
+    <div id="fx-particles" aria-hidden="true"></div>
+
+    <!-- Gradient for SVG strokes (your palette) -->
+    <svg width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="geomGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#62FFFF" />
+                <stop offset="27%" stop-color="#337CD9" />
+                <stop offset="50%" stop-color="#6117AB" />
+                <stop offset="77%" stop-color="#BA3570" />
+                <stop offset="100%" stop-color="#FF4CFF" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <!-- ===== NAVBAR ===== -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a href="#hero" class="nav-logo">
+                <img src="./img/logo.png" alt="Face Not Fake Logo" />
+            </a>
+
+            <!-- center menu -->
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <!-- right-side actions -->
+            <div class="nav-actions">
+                <a href="#contact" class="btn primary small nav-contact">Contact</a>
+
+                <!-- hamburger for mobile -->
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero container">
+        <!-- thin sacred geometry behind the heading -->
+        <svg class="geometry geometry--hero parallax" data-speed="0.03" viewBox="0 0 200 200" aria-hidden="true">
+            <!-- circle + triangle + hexagon light strokes -->
+            <circle cx="100" cy="100" r="90" fill="none" />
+            <path d="M100,20 170,140 30,140 Z" fill="none" />
+            <polygon points="100,30 150,65 150,135 100,170 50,135 50,65" fill="none" />
+        </svg>
+
+        <h1 class="reveal" style="--d:0ms">
+            Feel lifted, <span class="rainbow">aligned</span>, and beautiful — naturally.
+        </h1>
+        <p class="reveal" style="--d:120ms">
+            Holistic face and body sculpting therapy designed to release tension,
+            restore symmetry, and awaken your glow.
+        </p>
+        <div class="buttons reveal" style="--d:240ms">
+            <a href="#booking" class="btn primary">Book Your First Session</a>
+            <a href="#how" class="btn">How It Works</a>
+        </div>
+    </section>
+
+
+    <!-- QUICK EXPLAINER -->
+    <section class="explainer container">
+        <h2 class="reveal" style="--d:0ms">
+            Not just a massage — a reset for your face and body.
+        </h2>
+        <p class="reveal" style="--d:140ms">
+            Your face reflects your posture, stress, and emotions. This method works with your whole body
+            to release blocks and sculpt natural beauty — no needles, no machines, no fakeness.
+        </p>
+        <!-- subtle background geometry -->
+        <svg class="geometry geometry--band parallax" data-speed="-0.02" viewBox="0 0 220 120" aria-hidden="true">
+            <circle cx="110" cy="60" r="54" fill="none" />
+            <circle cx="110" cy="60" r="34" fill="none" />
+            <path d="M56,60h108M110,6v108" fill="none" />
+        </svg>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="how container">
+        <h2 class="reveal">Here’s what to expect:</h2>
+        <div class="journey">
+            <div class="journey-step reveal" data-step="1" style="--i:0; --d:0ms">
+                <div class="bubble">💬 Consultation</div>
+                <p>We talk through your needs, concerns & history</p>
+            </div>
+            <div class="journey-step reveal" data-step="2" style="--i:1; --d:80ms">
+                <div class="bubble">🌿 Bodywork</div>
+                <p>Releasing physical tension in chest, back, and neck</p>
+            </div>
+            <div class="journey-step reveal" data-step="3" style="--i:2; --d:160ms">
+                <div class="bubble">✨ Facial Sculpting</div>
+                <p>Sculpting, draining & rebalancing facial structure</p>
+            </div>
+            <div class="journey-step reveal" data-step="4" style="--i:3; --d:240ms">
+                <div class="bubble">🌸 Result</div>
+                <p>Lightness, symmetry, and a refreshed look that lasts</p>
+            </div>
+        </div>
+        <p class="optional reveal" style="--d:320ms">
+            You’ll walk out feeling reconnected to yourself — inside and out.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services container">
+        <h2 class="reveal"><span class="rainbow">Our Services</span> (Women only)</h2>
+
+        <!-- geometry tucked behind cards -->
+        <svg class="geometry geometry--services parallax" data-speed="0.02" viewBox="0 0 240 160" aria-hidden="true">
+            <circle cx="120" cy="80" r="70" fill="none" />
+            <path d="M50,80 L120,10 L190,80 L120,150 Z" fill="none" />
+            <path d="M70,40 L170,120 M170,40 L70,120" fill="none" />
+        </svg>
+
+        <div class="service-cards">
+            <article class="card parallax reveal" data-speed="0.06" style="--d:0ms">
+                <h3>✨ Facial Sculpting Therapy – First Visit</h3>
+                <p class="price">$180 / 75 minutes</p>
+                <p>A complete reset for your face and body. Includes consultation + full treatment.</p>
+                <a href="#booking" class="btn primary">Book Now</a>
+            </article>
+            <article class="card parallax reveal" data-speed="-0.01" style="--d:120ms">
+                <h3>✨ Facial Sculpting Therapy – Returning Clients</h3>
+                <p class="price">$180 / 60 minutes</p>
+                <p>Maintain the balance and radiance you’ve already achieved.</p>
+                <a href="#booking" class="btn primary">Book Now</a>
+            </article>
+            <article class="card parallax reveal" data-speed="0.07" style="--d:240ms">
+                <h3>✨ Relaxation Full Body Massage</h3>
+                <p class="price">$100 / 60 minutes</p>
+                <p>A calming massage for pure relaxation and stress release.</p>
+                <a href="#booking" class="btn primary">Book Now</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials container">
+        <h2 class="reveal">What women say after their sessions:</h2>
+        <ul>
+            <li class="reveal" style="--d:0ms">“My face looks lifted and soft — even days later.”</li>
+            <li class="reveal" style="--d:120ms">“I felt emotional release like I didn’t expect.”</li>
+            <li class="reveal" style="--d:240ms">“This is better than any facial I’ve tried.”</li>
+        </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about container">
+        <h2 class="reveal">Why I created Face Not Fake</h2>
+        <p class="reveal" style="--d:120ms">
+            I’m a former psychologist turned holistic practitioner. After years of studying the mind–body connection,
+            I created a therapy that works not only on your appearance — but how you feel inside.
+            No gimmicks. Just deep, skilled touch and care.
+        </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq container">
+        <h2 class="reveal">Frequently Asked Questions</h2>
+        <p class="faq-sub">Find quick answers to the most common questions about Face Sculpting Therapy.</p>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question">Who is Face Sculpting Therapy for?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>✔ Women who want a natural alternative to Botox or fillers<br>
+                        ✔ Anyone looking to lift, tone, and define their facial contours<br>
+                        ✔ Those wanting to improve skin elasticity & slow signs of aging<br>
+                        ✔ People with puffiness, tension, or stress-related tightness<br>
+                        ✔ Women of all ages — to maintain healthy muscle tone & prevent premature wrinkles</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What results can I expect?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>✔ More defined contours, softer lines, brighter eyes, reduced puffiness, improved posture, and a
+                        lighter overall feel.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How many sessions do I need?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>You may notice changes after just one session. For lasting results, 4–5 sessions are recommended.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Is it safe? Will it hurt?<span class="icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes — it’s completely safe, gentle, and deeply relaxing. Many clients describe it as a reset for
+                        face and body, not just a facial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section id="booking" class="cta container">
+        <h2 class="reveal">Ready to feel more like yourself?</h2>
+        <a href="#contact" class="btn primary reveal" style="--d:120ms">Book Now</a>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer id="contact" class="footer container">
+        <h2 class="reveal">Contact</h2>
+        <form class="reveal" style="--d:120ms" method="POST" action="sendmail.php">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn primary">Send</button>
+        </form>
+        <p class="legal">© Face Not Fake — ABN 98117712543 • Instagram</p>
+    </footer>
+    <!-- particles.js lib -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- your init (remove this line to disable particles) -->
+    <script src="/particles-init.js" defer></script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
