@@ -1,0 +1,19 @@
+*** Begin Patch
+*** Update File: index.html
+@@
+-        body {
++        body {
+             font-family: 'Helvetica Neue', Arial, sans-serif;
+             background: linear-gradient(160deg, #6646F6, #a88fff, #f9f9f9);
+             background-size: 400% 400%;
+             animation: gradientMove 20s ease infinite;
+             color: #fff;
+             min-height: 100vh;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+-            text-align: center;
++            text-align: left;
+             overflow: hidden;
+         }
+*** End Patch
