@@ -241,6 +241,7 @@ li {
   margin-top: 1rem;
 }
 
+
 @media (min-width: 920px) {
   .service-cards {
     grid-template-columns: repeat(3, 1fr);
@@ -250,18 +251,23 @@ li {
 .card {
   position: relative;
   /* keeps z-order sane */
-  text-align: left;
+  text-align: center;
   background: var(--glass);
   border: 1px solid var(--stroke);
   border-radius: 16px;
   padding: 1.6rem;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-}
 
+  
+}
 .card .price {
   color: #d9d5ff;
   margin: 0.3rem 0 0.8rem;
+}
+
+.card p {
+  margin-bottom: 1.6rem;
 }
 
 /* TESTIMONIALS / FAQ */
