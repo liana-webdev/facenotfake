@@ -195,7 +195,7 @@ li {
   border-radius: 1.8rem;
   padding: 1.2rem 1.6rem;
   font-family: "Oranienbaum", serif;
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   color: var(--ink);
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
