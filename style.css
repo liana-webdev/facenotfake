@@ -271,17 +271,7 @@ li {
 }
 
 /* TESTIMONIALS / FAQ */
-.testimonials {
-  text-align: left;
-}
 
-.testimonials h2 {
-  text-align: center;
-}
-
-.testimonials ul {
-  margin-top: 1rem;
-}
 .faq {
   text-align: center;
 }
@@ -357,6 +347,7 @@ ul {
   margin-right: 4px;
   color: var(--brand-3);
 }
+
 
 /* CONTACT */
 form {
@@ -813,3 +804,46 @@ html {
   opacity: 0.6;
   /* keep it gentle; adjust if needed */
 }/*# sourceMappingURL=style.css.map */
+
+/* =============================
+   GLOBAL TYPE NORMALIZATION FIX
+   ============================= */
+
+/* Force consistent paragraph text everywhere */
+p,
+li,
+.journey-step p,
+.card p,
+.testimonials p,
+.faq-answer p,
+.about p,
+.explainer p {
+  font-size: clamp(1rem, 1.4vw, 1.12rem) !important;
+  line-height: 1.45;
+  color: var(--ink-dim);
+}
+
+/* Force consistent h3 headings across ALL blocks */
+h3,
+.journey-step .bubble {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem) !important;
+  font-family: "Oranienbaum", serif !important;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  color: var(--ink);
+}
+
+/* remove bubble overrides */
+.journey-step .bubble {
+  padding: 1.2rem 1.6rem;
+  background: var(--glass);
+  border: 1px solid var(--stroke);
+  border-radius: 1.8rem;
+  box-shadow: 0 8px 28px rgba(102,70,246,0.25);
+}
+
+.testimonials ul,
+.testimonials li,
+.testimonials p {
+  text-align: left !important;
+}
