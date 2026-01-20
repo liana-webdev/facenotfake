@@ -8,8 +8,8 @@
   --brand-3: #D8B46A;
   --glass: rgba(255, 248, 235, 0.06);
   --stroke: rgba(255, 248, 235, 0.12);
-  --grad: linear-gradient(90deg, #F2E3C6, #E6C58F, #D8B46A, #B89555, #8C6A3F);
-  --simple-grad: linear-gradient(120deg, #F2E3C6, #E6C58F);
+  --grad: linear-gradient(90deg, #F2E3C6, #D8B46A, #8C6A3F,#D8B46A,#F2E3C6);
+  
   /* simplified gradient */
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -30,11 +30,14 @@ body {
 
 @keyframes rainbow {
   0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
+		background-position: -0% -50%;
+	}
+	50% {
+		background-position: -100% -50%;
+	}
+	100% {
+		background-position: -0% -50%;
+	}
 }
 .rainbow {
   background: var(--grad);
@@ -108,7 +111,7 @@ li {
 }
 
 .btn.primary {
-  background: var(--simple-grad);
+  background: var(--grad);
   background-size: 200% auto;
   animation: rainbow 18s linear infinite;
   border: none;
@@ -232,9 +235,6 @@ li {
   }
   .journey .journey-step {
     max-width: 100%;
-  }
-  .services p {
-    opacity: .6;
   }
 }
 /* Services grid — fixed for mobile */
@@ -379,20 +379,20 @@ textarea {
   inset: -20vh -20vw;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.7;
+  opacity: 0.4;
   filter: blur(60px);
-  background: radial-gradient(40% 60% at 30% 40%, rgba(230, 197, 143, 0.45) 0%, rgba(230, 197, 143, 0) 60%), radial-gradient(35% 60% at 70% 60%, rgba(184, 149, 85, 0.35) 0%, rgba(184, 149, 85, 0) 60%), radial-gradient(25% 40% at 50% 20%, rgba(140, 106, 63, 0.25) 0%, rgba(140, 106, 63, 0) 50%);
+  background: radial-gradient(40% 60% at 30% 40%, rgba(230, 197, 143, 0.28) 0%, rgba(230, 197, 143, 0) 60%), radial-gradient(35% 60% at 70% 60%, rgba(184, 149, 85, 0.22) 0%, rgba(184, 149, 85, 0) 60%), radial-gradient(25% 40% at 50% 20%, rgba(140, 106, 63, 0.16) 0%, rgba(140, 106, 63, 0) 50%);
   animation: mist-drift 28s var(--ease) infinite alternate;
 }
 
 .layer.l2 {
-  opacity: 0.55;
+  opacity: 0.4;
   filter: blur(90px);
   animation-duration: 34s;
 }
 
 .layer.l3 {
-  opacity: 0.45;
+  opacity: 0.32;
   filter: blur(120px);
   animation-duration: 42s;
 }
@@ -415,11 +415,11 @@ textarea {
   height: 42vmax;
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.3;
+  opacity: 0.18;
   z-index: 1;
   pointer-events: none;
   mix-blend-mode: screen;
-  background: radial-gradient(circle at 30% 30%, rgba(230, 197, 143, 0.6), rgba(184, 149, 85, 0.35) 60%, rgba(184, 149, 85, 0) 72%);
+  background: radial-gradient(circle at 30% 30%, rgba(230, 197, 143, 0.42), rgba(184, 149, 85, 0.22) 60%, rgba(184, 149, 85, 0) 72%);
   animation: orb 22s var(--ease) infinite alternate;
 }
 
@@ -439,7 +439,7 @@ textarea {
   right: 10vw;
   width: 32vmax;
   height: 32vmax;
-  opacity: 0.22;
+  opacity: 0.14;
   animation-duration: 36s;
 }
 
@@ -501,7 +501,7 @@ section + section::before {
   stroke: url(#geomGradient);
   stroke-width: 0.8;
   fill: none;
-  opacity: 0.16;
+  opacity: 0.1;
   vector-effect: non-scaling-stroke;
   mix-blend-mode: screen;
   animation: rainbow 40s linear infinite;
