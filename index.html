@@ -1,271 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Face Not Fake</title>
-    <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Face Not Fake | Mobile Holistic Face & Body Therapy Sydney</title>
+  <meta name="description" content="Women-only mobile holistic face and body sculpting therapy in Sydney. A private restorative ritual that comes to you." />
+  <link rel="stylesheet" href="/style.css" />
 </head>
-
 <body>
-    <!-- Moving gradient mist (depth/parallax) -->
-    <div class="mist layer l1 parallax" data-speed="0.12"></div>
-    <div class="mist layer l2 parallax" data-speed="0.2"></div>
-    <div class="mist layer l3 parallax" data-speed="0.35"></div>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a href="#home" class="wordmark" aria-label="Face Not Fake home">FACE NOT FAKE</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li><li><a href="#faq">FAQ</a></li><li><a href="#book">Book</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079">Book Session</a>
+    </nav>
+  </header>
 
-    <!-- Floating blur orbs -->
-    <div class="blur b1 parallax" data-speed="-0.05"></div>
-    <div class="blur b2 parallax" data-speed="0.08"></div>
-    <div class="blur b3 parallax" data-speed="-0.15"></div>
-    <!-- Particles layer (over background, under content) -->
-    <div id="fx-particles" aria-hidden="true"></div>
-
-    <!-- Gradient for SVG strokes (your palette) -->
-    <svg id="backgroundsvg" width="0" height="0" aria-hidden="true" focusable="false">
-        <defs>
-            <linearGradient id="geomGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#F2E3C6" />
-                <stop offset="25%" stop-color="#E6C58F" />
-                <stop offset="50%" stop-color="#D8B46A" />
-                <stop offset="75%" stop-color="#B89555" />
-                <stop offset="100%" stop-color="#8C6A3F" />
-            </linearGradient>
-        </defs>
-    </svg>
-    <!-- ===== NAVBAR ===== -->
-    <header class="site-header">
-        <nav class="nav container">
-            <a href="#hero" class="nav-logo">
-                <img src="./img/logo.png" alt="Face Not Fake Logo" />
-            </a>
-
-            <!-- center menu -->
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#how">How It Works</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-
-            <!-- right-side actions -->
-            <div class="nav-actions">
-                <a href="#contact" class="btn primary small nav-contact">Contact</a>
-
-                <!-- hamburger for mobile -->
-                <button class="nav-toggle" aria-label="Toggle menu">
-                    <div class="bar top"></div>
-                    <div class="bar middle"></div>
-                    <div class="bar bottom"></div>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- HERO -->
-    <section id="hero" class="hero container">
-        <!-- thin sacred geometry behind the heading -->
-        <svg class="geometry geometry--hero parallax" data-speed="0.03" viewBox="0 0 200 200" aria-hidden="true">
-            <!-- circle + triangle + hexagon light strokes -->
-            <circle cx="100" cy="100" r="90" fill="none" />
-            <path d="M100,20 170,140 30,140 Z" fill="none" />
-            <polygon points="100,30 150,65 150,135 100,170 50,135 50,65" fill="none" />
-        </svg>
-
-        <h1 class="reveal" style="--d:0ms">
-            <span class="rainbow">Face Not Fake </span>
-        </h1>
-        <h2>Mindful Beauty</h2><br>
-        <p class="reveal" style="--d:120ms">
-            Holistic face and body sculpting therapy designed to release tension,
-            restore symmetry, and awaken your glow.
-        </p>
-        <div class="buttons reveal" style="--d:240ms">
-            <a href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079"
-                class="btn primary">Book Your First Session</a>
-            <a href="#how" class="btn">How It Works</a>
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">MOBILE HOLISTIC FACE &amp; BODY THERAPY</p>
+          <h1>A face and body ritual that comes to you.</h1>
+          <p class="lead">Face Not Fake brings holistic face and body sculpting therapy to your space, helping release tension, restore balance, soften facial stress, and awaken your natural glow.</p>
+          <div class="button-row">
+            <a class="btn btn-primary" href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079">Book Your Session</a>
+            <a class="btn btn-outline" href="#experience">How It Works</a>
+          </div>
+          <ul class="trust-strip"><li>Women-only service in Sydney</li><li>Mobile service</li><li>Natural sculpting</li><li>No needles · No machines</li></ul>
         </div>
+        <aside class="hero-panel" aria-label="Mobile ritual visual panel">
+          <div class="hero-card">
+            <p class="eyebrow">PRIVATE IN-HOME RITUAL</p>
+            <h2>Sculpt. Release. Restore.</h2>
+            <p>Quiet, professional treatment with premium body and facial manual therapy in your own space.</p>
+          </div>
+        </aside>
+      </div>
     </section>
 
-
-    <!-- QUICK EXPLAINER -->
-    <section class="explainer container">
-        <h2 class="reveal" style="--d:0ms">
-            Not just a massage — a reset for your face and body.
-        </h2>
-        <p class="reveal" style="--d:140ms">
-            Your face reflects your posture, stress, and emotions. This method works with your whole body
-            to release blocks and sculpt natural beauty — no needles, no machines, no fakeness.
-        </p>
-        <!-- subtle background geometry -->
-        <svg class="geometry geometry--band parallax" data-speed="-0.02" viewBox="0 0 220 120" aria-hidden="true">
-            <circle cx="110" cy="60" r="54" fill="none" />
-            <circle cx="110" cy="60" r="34" fill="none" />
-            <path d="M56,60h108M110,6v108" fill="none" />
-        </svg>
+    <section class="section">
+      <div class="container prose">
+        <p class="eyebrow">PHILOSOPHY</p><h2>Not a facial. Not just a massage. A full-body reset.</h2>
+        <p>Your face holds more than skin. It reflects posture, tension, stress, breath, and emotion. Face Not Fake works with the body first, releasing the neck, shoulders, chest, and back before sculpting the face through skilled manual techniques.</p>
+      </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section id="how" class="how container">
-        <h2 class="reveal">Here’s what to expect:</h2>
+    <section id="experience" class="section">
+      <div class="container"><p class="eyebrow">MOBILE EXPERIENCE</p><h2>A calm treatment experience, brought to your space.</h2>
+      <div class="cards cards-4">
+        <article class="card"><h3>You book</h3><p>Choose your session and preferred time in moments.</p></article>
+        <article class="card"><h3>We come to you</h3><p>Women-only mobile service across Sydney with treatment essentials brought to your home.</p></article>
+        <article class="card"><h3>Your body releases</h3><p>Neck, chest, shoulders, and back bodywork eases held tension and supports posture.</p></article>
+        <article class="card"><h3>Your face restores</h3><p>Manual sculpting supports circulation, contour, and softer facial stress patterns.</p></article>
+      </div></div>
+    </section>
 
-        <div class="journey">
-            <div class="journey-step reveal" data-step="1" style="--i:0; --d:0ms">
-                <h3 class="bubble">💬 Consultation</h3>
-                <p>We talk through your needs, concerns & history</p>
-            </div>
-            <div class="journey-step reveal" data-step="2" style="--i:1; --d:80ms">
-                <h3 class="bubble">🌿 Bodywork</h3>
-                <p>Releasing physical tension in chest, back, and neck</p>
-            </div>
-            <div class="journey-step reveal" data-step="3" style="--i:2; --d:160ms">
-                <h3 class="bubble">✨ Facial Sculpting</h3>
-                <p>Sculpting, draining & rebalancing facial structure</p>
-            </div>
-            <div class="journey-step reveal" data-step="4" style="--i:3; --d:240ms">
-                <h3 class="bubble">🌸 Result</h3>
-                <p>Lightness, symmetry, and a refreshed look that lasts</p>
-            </div>
+    <section id="services" class="section">
+      <div class="container"><p class="eyebrow">SERVICES</p><h2>Choose your ritual</h2>
+        <div class="cards cards-3">
+          <article class="card service primary"><h3>Facial Sculpting Therapy — First Visit</h3><p class="meta">75 minutes · $280</p><p class="who">For women starting their Face Not Fake journey.</p><p>Includes consultation plus full mobile body-and-face treatment to create a clear baseline and personalized plan.</p><a class="btn btn-primary" href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079">Book Your Session</a></article>
+          <article class="card service"><h3>Facial Sculpting Therapy — Returning Clients</h3><p class="meta">60 minutes · $250</p><p class="who">For ongoing support and maintenance.</p><p>Designed to maintain contour, reduce tension build-up, and continue your natural restoration rhythm at home.</p><a class="btn btn-outline" href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079">Book Returning Session</a></article>
+          <article class="card service"><h3>Relaxation Full Body Massage</h3><p class="meta">60 minutes · $150</p><p class="who">For women seeking grounded body release.</p><p>A calming mobile full-body massage designed to help ease stress and support deep nervous system calm.</p><a class="btn btn-outline" href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079">Book Massage</a></article>
         </div>
-        <p class="optional reveal" style="--d:320ms">
-            You’ll walk out feeling reconnected to yourself — inside and out.
-        </p>
+      </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="services container">
-        <h2 class="reveal"><span class="rainbow">Our Services</span></h2>
-        <p>(women service only)</p>
-        <br>
-        <br>
-        <!-- geometry tucked behind cards -->
-        <svg class="geometry geometry--services parallax" data-speed="0.02" viewBox="0 0 240 160" aria-hidden="true">
-            <circle cx="120" cy="80" r="70" fill="none" />
-            <path d="M50,80 L120,10 L190,80 L120,150 Z" fill="none" />
-            <path d="M70,40 L170,120 M170,40 L70,120" fill="none" />
-        </svg>
-
-        <div class="service-cards">
-            <article class="card parallax reveal" data-speed="0.06" style="--d:0ms">
-                <h3>✨ Facial Sculpting Therapy – First Visit</h3>
-                <p class="price">$150 / 75 minutes</p>
-                <p>A complete reset for your face and body. Includes consultation + full treatment</p>
-                <a href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079"
-                    class="btn primary">Book Now</a>
-            </article>
-            <article class="card parallax reveal" data-speed="-0.01" style="--d:120ms">
-                <h3>✨ Facial Sculpting Therapy – Returning Clients</h3>
-                <p class="price">$150 / 60 minutes</p>
-                <p>Maintain the balance and radiance you’ve already achieved</p>
-                <a href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079"
-                    class="btn primary">Book Now</a>
-            </article>
-            <article class="card parallax reveal" data-speed="0.07" style="--d:240ms">
-                <h3>✨ Relaxation Full Body Massage</h3>
-                <p class="price">$100 / 60 minutes</p>
-                <p>A calming massage for pure relaxation and stress release</p>
-                <a href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079"
-                    class="btn primary">Book Now</a>
-            </article>
-        </div>
+    <section class="section">
+      <div class="container"><p class="eyebrow">YOUR VISIT INCLUDES</p><h2>What happens during your ritual</h2>
+      <div class="cards cards-4"><article class="card"><h3>Body Release</h3></article><article class="card"><h3>Facial Sculpting</h3></article><article class="card"><h3>Lymphatic Flow</h3></article><article class="card"><h3>Nervous System Calm</h3></article></div>
+      <p class="disclaimer">Face Not Fake is a wellness and rejuvenation service. It is not a medical treatment and does not replace medical advice.</p></div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="testimonials container">
-        <h2 class="reveal">What women say after their sessions:</h2>
-        <ul>
-            <li class="reveal" style="--d:0ms">I've been coming to Svetlana for almost 1 year and from the very
-                beginning I could feel the tremendous improvement in how I look and feel, plus long term benefits that
-                these sessions have brought me make me feel like I am aging but in reverse! I recommend Face Not Fake to
-                anyone who is looking for truly revolutionary beauty and wellness therapy - face sculpting is the
-                future” <br>- Liana</li>
-            <li class="reveal">My first visit was back in August 2023. I am 35 years old and tried several different
-                methods to get rid of wrinkles and saggy skin, eg beauty devices and creams. While they have their
-                benefits, nothing was like the results I had after a few session with this studio, although at first it
-                was very new to me. My friends and family noticed that I look younger and more energetic. Please come to
-                Svetlana to experience the same magic. <br>- Olivia</li>
-        </ul>
+    <section id="about" class="section">
+      <div class="container about-grid"><div><p class="eyebrow">ABOUT</p><h2>Created by a former psychologist turned holistic practitioner.</h2><p>After years of studying the mind-body connection, the founder created Face Not Fake to treat beauty as something connected to posture, stress, emotions, and inner balance. The work is hands-on, deeply attentive, and focused on helping women feel lighter, softer, and more connected to themselves.</p></div><blockquote class="quote-card">“Beauty feels different when your body and nervous system feel safe.”</blockquote></div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="about container">
-        <h2 class="reveal">Why I created Face Not Fake</h2>
-        <p class="reveal" style="--d:120ms">
-            I am a former clinical psychologist turned holistic practitioner. After years of studying the mind–body
-            connection,
-            I created a therapy that works not only on your appearance with how you feel inside, using deep skilled
-            touch and care.
-        </p>
-    </section>
+    <section class="section"><div class="container"><p class="eyebrow">BENEFITS</p><h2>What women often notice</h2><ul class="benefits"><li>Softer facial tension</li><li>More defined facial contours</li><li>Reduced puffiness</li><li>Lighter neck and shoulders</li><li>Improved sense of balance</li><li>Calmer nervous system</li><li>Refreshed natural glow</li></ul></div></section>
 
-    <!-- FAQ -->
-    <section class="faq container">
-        <h2 class="reveal">Frequently Asked Questions</h2>
-        <p class="faq-sub">Find quick answers to the most common questions about Face Sculpting Therapy.</p>
+    <section id="faq" class="section"><div class="container"><p class="eyebrow">FAQ</p><h2>Frequently asked questions</h2><div class="faq-list">
+      <details><summary>Who is it for?</summary><p>Women seeking natural face and body support in a private setting.</p></details>
+      <details><summary>What results can I expect?</summary><p>Results vary, but women often notice reduced tension and a fresher, more rested look.</p></details>
+      <details><summary>How many sessions do I need?</summary><p>Some women notice a shift after one session; ongoing sessions may support longer-term outcomes.</p></details>
+      <details><summary>Is it safe?</summary><p>The service is designed to be gentle and restorative. Please share health concerns before booking.</p></details>
+      <details><summary>What do I need to prepare for a mobile session?</summary><p>A quiet, comfortable space. Any additional preparation is confirmed after booking.</p></details>
+      <details><summary>Which areas do you service?</summary><p>Sydney mobile service areas are confirmed at booking.</p></details>
+      <details><summary>Is this medical treatment?</summary><p>No. This is a wellness service and does not replace medical care.</p></details>
+      <details><summary>What do I need at home?</summary><p>A quiet space where you can relax comfortably. Any extra preparation details can be confirmed after booking.</p></details>
+    </div></div></section>
 
-        <div class="faq-list">
-            <div class="faq-item">
-                <button class="faq-question">Face Not Fake therapy is for those who:<span class="icon">+</span></button>
-                <div class="faq-answer">
-                    <p>✔ want a natural alternative to Botox or fillers<br>
-                        ✔ are looking to lift, tone, and define their facial contours<br>
-                        ✔ want to improve skin elasticity & slow signs of aging<br>
-                        ✔ have puffiness, tension, or stress-related tightness<br>
-                        ✔ want to maintain healthy muscle tone & prevent premature wrinkles</p>
-                </div>
-            </div>
+    <section id="book" class="section cta"><div class="container"><h2>Ready for your reset?</h2><p>Book a mobile Face Not Fake session and experience natural sculpting, body release, and deep restoration in your own space.</p><a class="btn btn-primary" href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079">Book Your Session</a></div></section>
+  </main>
 
-            <div class="faq-item">
-                <button class="faq-question">What results can I expect?<span class="icon">+</span></button>
-                <div class="faq-answer">
-                    <p>✔ More defined contours, softer lines, brighter eyes, reduced puffiness, improved posture, and a
-                        lighter overall feel.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">How many sessions do I need?<span class="icon">+</span></button>
-                <div class="faq-answer">
-                    <p>You may notice changes after just one session. For lasting results, 4–5 sessions are recommended.
-                    </p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Is it safe? Will it hurt?<span class="icon">+</span></button>
-                <div class="faq-answer">
-                    <p>Yes — it’s completely safe, gentle, and deeply relaxing. Many clients describe it as a reset for
-                        face and body, not just a facial.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section id="booking" class="cta container">
-        <h2 class="reveal">Ready to feel more like yourself?</h2>
-        <a href="https://www.fresha.com/book-now/facial-sculpting-therapy-n4tsrtaf/services?lid=1485880&eid=3353744&share=true&pId=1411079"
-            class="btn primary reveal" style="--d:120ms">Book Now</a>
-    </section>
-
-    <!-- CONTACT / FOOTER -->
-    <footer id="contact" class="footer container">
-        <h2 class="reveal">Contact</h2>
-        <form class="reveal" style="--d:120ms" method="POST" action="sendmail.php">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn primary">Send</button>
-        </form>
-        <p class="legal">© Face Not Fake — ABN 98117712543 • Instagram</p>
-    </footer>
-    <!-- particles.js lib -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <!-- your init (remove this line to disable particles) -->
-    <script src="/particles-init.js" defer></script>
-
-    <script src="/script.js"></script>
+  <footer class="site-footer"><div class="container footer-grid"><div><p class="wordmark">FACE NOT FAKE</p><p>Holistic face and body therapy that comes to you.</p><p>Women-only mobile service in Sydney.</p></div><div><p>Contact: via booking page</p><p>Instagram: @facenotfake</p><p>ABN 98117712543</p></div></div><p class="container disclaimer">Wellness disclaimer: this service supports relaxation and rejuvenation and is not a medical treatment.</p></footer>
+  <script src="/script.js"></script>
 </body>
-
 </html>
